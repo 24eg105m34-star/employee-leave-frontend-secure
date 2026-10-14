@@ -1,4 +1,4 @@
-```jsx
+
 import { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
 import {
@@ -7,8 +7,7 @@ import {
   getLeaveTypes,
   updateLeaveType,
 } from '../../services/employeeService';
-
-export default function LeaveTypeManagement() {
+ function LeaveTypeManagement() {
   const [i, setI] = useState([]);
   const [f, setF] = useState({
     name: '',
@@ -171,4 +170,4 @@ export default function LeaveTypeManagement() {
     </Layout>
   );
 }
-```
+export default LeaveTypeManagement;
