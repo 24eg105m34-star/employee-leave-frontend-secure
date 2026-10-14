@@ -1,0 +1,14 @@
+import api from './api';
+export const getEmployees=(p={})=>api.get('/employees',{params:p});
+export const getEmployee=id=>api.get(`/employees/${id}`);
+export const createEmployee=p=>api.post('/employees',p);
+export const updateEmployee=(id,p)=>api.put(`/employees/${id}`,p);
+export const deleteEmployee=id=>api.delete(`/employees/${id}`);
+export const getDepartments=()=>api.get('/departments');
+export const createDepartment=p=>api.post('/departments',p);
+export const updateDepartment=(id,p)=>api.put(`/departments/${id}`,p);
+export const deleteDepartment=id=>api.delete(`/departments/${id}`);
+export const getLeaveTypes=()=>api.get('/leave-types');
+export const createLeaveType=p=>api.post('/leave-types',p);
+export const updateLeaveType=(id,p)=>api.put(`/leave-types/${id}`,p);
+export const deleteLeaveType=id=>api.delete(`/leave-types/${id}`);

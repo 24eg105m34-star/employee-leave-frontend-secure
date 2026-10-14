@@ -1,0 +1,1 @@
+export default function DashboardCard({title,value,hint,icon}){return <div className="dashboard-card"><div className="card-icon">{icon||'•'}</div><div><p className="card-title">{title}</p><h3>{value??0}</h3>{hint&&<p className="card-hint">{hint}</p>}</div></div>}

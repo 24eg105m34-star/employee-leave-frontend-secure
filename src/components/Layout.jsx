@@ -1,0 +1,1 @@
+import Navbar from'./Navbar';import{useAuth}from'../context/AuthContext';export default function Layout({title,children}){const{user}=useAuth();const role=String(user?.role||'EMPLOYEE').toLowerCase();return <div className={`app-shell theme-${role}`}><Navbar title={title}/><main className="page-content">{children}</main></div>}
